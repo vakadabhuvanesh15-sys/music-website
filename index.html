@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student-made Tamil music discovery page featuring Anirudh Ravichander and Sai Abhyankkar.">
+  <title>Tamil Notes | Discover Tamil Music</title>
+
+  <!-- Heading and body fonts; the CSS includes system-font fallbacks. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar navigation becomes a top navigation bar on smaller screens. -->
+  <aside class="sidebar" aria-label="Main sidebar">
+    <header>
+      <a class="brand" href="#home" aria-label="Tamil Notes home">
+        <span class="brand-mark" aria-hidden="true">♫</span>
+        <span>Tamil<span class="brand-light">Notes</span></span>
+      </a>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home"><span aria-hidden="true">⌂</span>Home</a>
+      <a class="nav-link" href="#artists"><span aria-hidden="true">♙</span>Artists</a>
+      <a class="nav-link" href="#albums"><span aria-hidden="true">▣</span>Albums</a>
+      <a class="nav-link" href="#playlists"><span aria-hidden="true">☷</span>Playlists</a>
+      <a class="nav-link" href="#popular"><span aria-hidden="true">♫</span>Popular</a>
+      <a class="nav-link" href="#player"><span aria-hidden="true">▶</span>Player</a>
+    </nav>
+    <p class="sidebar-note">Your daily dose of<br><strong>Tamil sound.</strong></p>
+  </aside>
+
+  <!-- Main page content. -->
+  <main class="page-content">
+    <!-- Welcome banner and primary link to the audio player. -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> MADE FOR MUSIC LOVERS</p>
+        <h1 id="hero-title">Listen to the best<br>of <span>Tamil music.</span></h1>
+        <p class="hero-description">From chart-topping anthems to your next favourite sound. Your Tamil music journey starts here.</p>
+        <a class="button button-primary" href="#player"><span aria-hidden="true">▶</span> Start Listening</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract concert lights representing the energy of live music">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-record"><span>♫</span></div>
+        <span class="hero-tag">SOUND ON <span aria-hidden="true">↗</span></span>
+      </div>
+    </section>
+
+    <!-- Featured Tamil music artists. -->
+    <section class="content-section" id="artists" aria-labelledby="artists-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE CREATORS</p>
+          <h2 id="artists-title">Featured artists</h2>
+        </div>
+        <span class="section-count">02 ARTISTS</span>
+      </div>
+      <div class="artist-list">
+        <article class="artist-card">
+          <!-- Placeholder photo: replace with a properly licensed artist photo. -->
+          <img class="artist-photo" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80" alt="Singer performing under stage lights, used as an artist image placeholder">
+          <div class="artist-info">
+            <p class="card-kicker">MUSIC COMPOSER · SINGER</p>
+            <h3>Anirudh Ravichander</h3>
+            <p>Known for energetic Tamil film soundtracks and memorable hooks.</p>
+          </div>
+          <button class="button button-outline" type="button" aria-label="Follow Anirudh Ravichander">Follow <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="artist-card">
+          <!-- Placeholder photo: replace with a properly licensed artist photo. -->
+          <img class="artist-photo" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80" alt="Live music performance with colorful lights, used as an artist image placeholder">
+          <div class="artist-info">
+            <p class="card-kicker">MUSIC COMPOSER · SINGER</p>
+            <h3>Sai Abhyankkar</h3>
+            <p>A rising Tamil music voice with a fresh, independent sound.</p>
+          </div>
+          <button class="button button-outline" type="button" aria-label="Follow Sai Abhyankkar">Follow <span aria-hidden="true">+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Album and single cards by both featured artists. -->
+    <section class="content-section" id="albums" aria-labelledby="albums-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ON REPEAT</p>
+          <h2 id="albums-title">Albums &amp; singles</h2>
+        </div>
+        <a class="text-link" href="#popular">View popular tracks <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="card-list album-list">
+        <article class="album-card" id="anirudh-albums">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Music production equipment as placeholder cover art for Jailer">
+          <h3>Jailer</h3>
+          <p>Anirudh Ravichander <span>·</span> 2023</p>
+        </article>
+        <article class="album-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Singer on stage as placeholder cover art for Beast">
+          <h3>Beast</h3>
+          <p>Anirudh Ravichander <span>·</span> 2022</p>
+        </article>
+        <article class="album-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Concert crowd under stage lighting as placeholder cover art for Master">
+          <h3>Master</h3>
+          <p>Anirudh Ravichander <span>·</span> 2021</p>
+        </article>
+        <article class="album-card" id="sai-albums">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Musician playing guitar as placeholder cover art for Katchi Sera">
+          <h3>Katchi Sera</h3>
+          <p>Sai Abhyankkar <span>·</span> 2024</p>
+        </article>
+        <article class="album-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Night sky as placeholder cover art for Aasa Kooda">
+          <h3>Aasa Kooda</h3>
+          <p>Sai Abhyankkar <span>·</span> 2024</p>
+        </article>
+        <article class="album-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Abstract artwork as placeholder cover art for Sithira Puthiri">
+          <h3>Sithira Puthiri</h3>
+          <p>Sai Abhyankkar <span>·</span> <!-- Placeholder: verify the release year before replacing. --> YEAR TBC</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Curated playlist cards. -->
+    <section class="content-section" id="playlists" aria-labelledby="playlists-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MADE FOR YOUR MOMENT</p>
+          <h2 id="playlists-title">Your playlists</h2>
+        </div>
+      </div>
+      <div class="card-list playlist-list">
+        <article class="playlist-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="DJ performing at a concert, placeholder for Anirudh Hits playlist">
+          <h3>Anirudh Hits</h3>
+          <p><!-- Placeholder: update after adding songs to this playlist. -->12 songs</p>
+        </article>
+        <article class="playlist-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Festival lights, placeholder for Sai Abhyankkar Vibes playlist">
+          <h3>Sai Abhyankkar Vibes</h3>
+          <p><!-- Placeholder: update after adding songs to this playlist. -->8 songs</p>
+        </article>
+        <article class="playlist-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Energetic live concert, placeholder for Workout Beats playlist">
+          <h3>Workout Beats</h3>
+          <p><!-- Placeholder: update after adding songs to this playlist. -->20 songs</p>
+        </article>
+        <article class="playlist-card">
+          <!-- Placeholder cover art: replace with licensed artwork before publishing. -->
+          <img class="cover-image" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=480&amp;h=480&amp;q=80" alt="Quiet night sky, placeholder for Late Night Chill playlist">
+          <h3>Late Night Chill</h3>
+          <p><!-- Placeholder: update after adding songs to this playlist. -->15 songs</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Horizontally scrollable recently played song cards. -->
+    <section class="content-section" id="recently-played" aria-labelledby="recent-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p>
+          <h2 id="recent-title">Recently played</h2>
+        </div>
+        <span class="section-count">SCROLL TO EXPLORE →</span>
+      </div>
+      <div class="recent-list">
+        <article class="recent-card">
+          <!-- Placeholder image: replace with licensed track artwork. -->
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80" alt="Studio equipment placeholder for Hukum">
+          <div><h3>Hukum</h3><p>Anirudh Ravichander</p></div>
+        </article>
+        <article class="recent-card">
+          <!-- Placeholder image: replace with licensed track artwork. -->
+          <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80" alt="Guitar player placeholder for Katchi Sera">
+          <div><h3>Katchi Sera</h3><p>Sai Abhyankkar</p></div>
+        </article>
+        <article class="recent-card">
+          <!-- Placeholder image: replace with licensed track artwork. -->
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80" alt="Singer performing placeholder for Arabic Kuthu">
+          <div><h3>Arabic Kuthu</h3><p>Anirudh Ravichander</p></div>
+        </article>
+        <article class="recent-card">
+          <!-- Placeholder image: replace with licensed track artwork. -->
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80" alt="Night sky placeholder for Aasa Kooda">
+          <div><h3>Aasa Kooda</h3><p>Sai Abhyankkar</p></div>
+        </article>
+        <article class="recent-card">
+          <!-- Placeholder image: replace with licensed track artwork. -->
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80" alt="Concert crowd placeholder for Vaathi Coming">
+          <div><h3>Vaathi Coming</h3><p>Anirudh Ravichander</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Popular songs arranged as Flexbox rows. -->
+    <section class="content-section" id="popular" aria-labelledby="popular-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE CROWD FAVOURITES</p>
+          <h2 id="popular-title">Popular tracks</h2>
+        </div>
+        <span class="section-count">TOP 08</span>
+      </div>
+      <div class="track-list" role="list" aria-label="Popular tracks">
+        <div class="track-row track-heading" aria-hidden="true">
+          <span class="track-rank">#</span><span class="track-title-label">TITLE</span><span class="track-artist-label">ARTIST</span><span class="track-album-label">ALBUM</span><span class="track-duration">TIME</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">01</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Studio placeholder artwork for Hukum">
+          <div class="track-title"><h3>Hukum</h3><p>Anirudh Ravichander</p></div><span class="track-artist">Anirudh Ravichander</span><span class="track-album">Jailer</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">02</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Guitar placeholder artwork for Katchi Sera">
+          <div class="track-title"><h3>Katchi Sera</h3><p>Sai Abhyankkar</p></div><span class="track-artist">Sai Abhyankkar</span><span class="track-album">Katchi Sera</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">03</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Stage performance placeholder artwork for Arabic Kuthu">
+          <div class="track-title"><h3>Arabic Kuthu</h3><p>Anirudh Ravichander</p></div><span class="track-artist">Anirudh Ravichander</span><span class="track-album">Beast</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">04</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Night sky placeholder artwork for Aasa Kooda">
+          <div class="track-title"><h3>Aasa Kooda</h3><p>Sai Abhyankkar</p></div><span class="track-artist">Sai Abhyankkar</span><span class="track-album">Aasa Kooda</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">05</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Concert crowd placeholder artwork for Vaathi Coming">
+          <div class="track-title"><h3>Vaathi Coming</h3><p>Anirudh Ravichander</p></div><span class="track-artist">Anirudh Ravichander</span><span class="track-album">Master</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">06</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Abstract placeholder artwork for Sithira Puthiri">
+          <div class="track-title"><h3>Sithira Puthiri</h3><p>Sai Abhyankkar</p></div><span class="track-artist">Sai Abhyankkar</span><span class="track-album">Sithira Puthiri</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">07</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Singer on stage placeholder artwork for Naa Ready">
+          <div class="track-title"><h3>Naa Ready</h3><p>Anirudh Ravichander</p></div><span class="track-artist">Anirudh Ravichander</span><span class="track-album">Leo</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+        <div class="track-row" role="listitem">
+          <span class="track-rank">08</span>
+          <img class="track-image" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Recording studio placeholder artwork for Why This Kolaveri Di">
+          <div class="track-title"><h3>Why This Kolaveri Di</h3><p>Anirudh Ravichander</p></div><span class="track-artist">Anirudh Ravichander</span><span class="track-album">3</span><span class="track-duration"><!-- Placeholder: replace with verified duration. -->--:--</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer links and copyright. -->
+    <footer class="site-footer">
+      <p>© 2026 Tamil Notes. Made for music lovers.</p>
+      <div class="footer-links"><a href="#home">Back to top ↑</a><a href="#player">Listen now</a></div>
+    </footer>
+  </main>
+
+  <!-- Fixed music player; bottom padding on the page keeps the footer visible. -->
+  <section class="player-bar" id="player" aria-label="Music player">
+    <div class="now-playing">
+      <!-- Placeholder image: replace with licensed track artwork. -->
+      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=80" alt="Studio placeholder artwork for the royalty-free sample">
+      <div><h2>SoundHelix Song 1</h2><p>Royalty-free sample</p></div>
+      <button class="icon-button favorite-button" type="button" aria-label="Add the sample to favourites">♡</button>
+    </div>
+    <div class="player-controls">
+      <div class="control-buttons" aria-label="Playback controls">
+        <button class="icon-button" type="button" aria-label="Previous track">⏮</button>
+        <button class="play-button" type="button" aria-label="Play sample">▶</button>
+        <button class="icon-button" type="button" aria-label="Next track">⏭</button>
+      </div>
+      <div class="progress-row">
+        <!-- Placeholder preview only: this CSS progress bar is not linked to audio playback. -->
+        <span>1:20</span>
+        <div class="progress-track" role="img" aria-label="Sample progress preview: 1 minute 20 seconds of about 6 minutes 12 seconds"><span></span></div>
+        <span>6:12</span>
+      </div>
+    </div>
+    <div class="volume-area">
+      <span aria-hidden="true">🔊</span>
+      <span class="volume-track" role="img" aria-label="Volume level"></span>
+    </div>
+    <!-- This royalty-free sample plays independently; the decorative controls above are not wired up. -->
+    <audio class="sample-audio" controls preload="none" aria-label="Royalty-free music sample">
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support HTML audio. <!-- Placeholder sample: verify external availability or replace with your own royalty-free audio. -->
+    </audio>
+  </section>
+</body>
+</html>
